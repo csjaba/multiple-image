@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @gallery.name %>
+</p>
+
+<ul id="photos" class="thumbnails" data-json-url="<%= gallery_path(@gallery, :format => :json) %>">
+</ul>
+
+<input id="fileupload" type="file" name="photo[file]"
+       data-photos-path="<%= gallery_photos_path(@gallery) %>" multiple>
+
+<p>
+  <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+  <%= link_to 'Back', galleries_path %>
+</p>

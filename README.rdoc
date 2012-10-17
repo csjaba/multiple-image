@@ -1,0 +1,5 @@
+== Sample Rails 3.2 project with Multi File Upload using jQuery-File-Upload
+
+This is a very simple example that shows a Rails 3.2 app using the jQuery-File-Upload to 
+support the uploading of multiple files.
+
